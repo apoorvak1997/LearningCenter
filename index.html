@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://www.oracle.com/asset/web/favicons/favicon-32.png" sizes="32x32">
+    <title> Clinical One Access Your Data</title>
+
+    <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+    <meta name="dcterms.created" content="2021-08-27T13:24:15+00:00">
+    <meta name="dcterms.title" content="Welcome to Oracle Health Sciences Clinical One">
+    <meta name="dcterms.category" content="industries">
+    <meta name="dcterms.isVersionOf" content="WELCOME">
+    <meta name="dcterms.product" content="en/industries/health-sciences/clinical-one">
+
+    <meta name="dcterms.release" content="Latest Release">
+    <script id="ssot-metadata"
+        type="application/json">{"primary":{"category":{"short_name":"industries","element_name":"Industries","display_in_url":true},"suite":{"short_name":"health-sciences","element_name":"Health Sciences","display_in_url":true},"product_group":{"short_name":"health-science-clinical","element_name":"Clinical","display_in_url":false},"product":{"short_name":"clinical-one","element_name":"Health Sciences Clinical One Platform","display_in_url":true},"release":{"short_name":"latest","element_name":"Latest Release","display_in_url":false}}}</script>
+
+    <meta name="dcterms.identifier" content="F48219-02">
+    <script
+        type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","name":" Clinical One Welcome Kit","datePublished":"2021-09-05 23:02:25 PDT","dateModified":"2021-11-08 17:31:45 PST"} </script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script>
+</head>
+
+<body>
+    <!-- Header navigation bar -->
+    <header id="navbar" class="sticky">
+        <div class="logo-container">
+            <img src="./files/logo-oracle-red.svg" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#">Welcome</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!--Section 1: Heading Banner-->
+        <section>
+            <!-- Banner Section containing background and Heading -->
+            <div class="banner1">
+                <h1>Clinical One Training Duration</h1>
+                <br>
+                <!--Yellow rectangle below Heading-->
+                <svg width="51" height="5" viewBox="0 0 51 5" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="margin-left:160px">
+                    <path d="M51 0H0V5H51V0Z" fill="#F0CC71" />
+                </svg>
+                <br>
+
+            </div>
+        </section>
+        <!--Section 2: Content-->
+        <section class="content">
+            <br>
+            <!--Filter button and Search input field group -->
+            <div class="filter-search">
+                <!--Filter button going back to all categories-->
+                <select id="filter" onchange="filterDropDown()" class='form-control'>
+                    <option>All roles</option>
+                    <option>Adjudicator</option>
+                    <option>Clinical Supply Manager</option>
+                </select>
+                <!--Search field-->
+                <input type="text" id="searchRole" onkeyup="searchRole()" placeholder=" Search for a study role"
+                    title="Type in a name">
+            </div>
+            <br>
+            <!--role tab-->
+            <div class="role">
+                <!--Role heading-->
+                <h5>Adjudicator</h5>
+                <!--flip clock-->
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>0</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Clinical Supply Manager</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>5</span>
+                    </div>
+                    <div class="foldable">
+                        <span>5</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>2</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>3</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="cra" onClick="navigate()">
+                <h5>Clinical Research Associate</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <div class="foldable">
+                        <span>8</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>2</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>9</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Data Manager</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <div class="foldable">
+                        <span>4</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>1</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>8</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Medical Monitor</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>1</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>4</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Study Designer</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>5</span>
+                    </div>
+                    <div class="foldable">
+                        <span>5</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>1</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>9</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>ODM Extract</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>0</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Pharmacy User</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>1</span>
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>1</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Rules Designer</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>4</span>
+                    </div>
+                    <div class="foldable">
+                        <span>7</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>4</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>7</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Site Administrator</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>6</span>
+                    </div>
+                    <div class="foldable">
+                        <span>8</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>4</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role">
+                <h5>Site User</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>1</span>
+                    </div>
+                    <div class="foldable">
+                        <span>5</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>2</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>7</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+
+        </section>
+        <!--Footer Section-->
+        <section class="end">
+            <a href="https://www.oracle.com/legal/copyright.html" target="_blank" class="copyright">&#x00a9; 2022 Oracle
+            </a>
+        </section>
+
+    </main>
+    <script src="./script.js"></script>
+    <noscript><img
+            src="https://docs.oracle.com/akam/11/pixel_26b73071?a=dD01OTgwZmUyNjA5ZWNmNzMyOTc5YjMwNjkxYTNiYmI4YzIyMTY0YTQ0JmpzPW9mZg=="
+            style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript>
+</body>
+
+</html>
