@@ -64,7 +64,7 @@
   .banner1 h1{
     margin-left:160px;
     font-family: Georgia;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 53px;
     
     color: #FFFFFF;
@@ -99,14 +99,16 @@
     margin-bottom:10px;
     align-items: center;
     justify-content: space-between;
-    
-    
+  }
+  .role:hover{
+    border: 1px solid #0572CE;
+    color:#0572CE;
   }
   .role h5{
     font-family: 'Oracle Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 16px;
     padding:15px;
   }
   .time-total{
@@ -143,12 +145,13 @@
     background: #2A2D3F;
   }
   .role p{
-    font-family:'Oracle-Sans';
-    font-size:10px;
+    font-family:'Oracle Sans';
+    font-size:12px;
     position: relative;
     width: 27.16px;
     height: 13.34px;
     top: 20.97px;
+    color:black!important;
   }
   .number{
     
@@ -237,13 +240,18 @@ position: relative;
   text-transform: uppercase;
   text-shadow: 0 -1px 0 #000;
   margin-right:2px;
+  z-index: 10;
 }
 
 .role-detail-foldable span{
-  display:flex;
-    align-items:center;
-    text-align:center;
-    margin-top:auto;
+  width: 82.66px;
+  height: 72.33px;
+  position: absolute;
+  left: 24px;
+  margin:auto;
+  bottom: 30px;
+  top: 33px;
+  z-index: -2;
     font-family: 'Oracle Sans';
 font-style: normal;
 font-weight: 700;
@@ -517,8 +525,8 @@ left: 0px;
 top: 60px;
 font-family: 'Oracle Sans';
 font-style: normal;
-font-weight: 600;
-font-size: 14px;
+font-weight: 400;
+font-size: 16px;
 line-height: 18px;
 letter-spacing: -0.04em;
 
@@ -556,6 +564,7 @@ top: 3.17px;
 
 .content{
   background-image:url(./files/illustration-default.png);
+  min-height: 860px;
   background-repeat:no-repeat ;
   background-position-x: 95%;
   background-position-y: bottom ;

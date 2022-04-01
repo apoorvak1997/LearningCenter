@@ -23,15 +23,23 @@ function filterDropDown() {
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("h5")[0];
     if (td && filter!=='all roles') {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+       if (td.classList.contains(filter.toLowerCase())) {
         tr[i].style.display = "";
       } 
       else {
+        console.log(filter.toLowerCase());
+        if(filter.toLowerCase()==='all roles'){
+         for(let j=0;j<tr.length;j++){
+           tr[j].style.display="";
+         }
+        }
         tr[i].style.display = "none";
       }
     }
+    else if(filter==='all roles'){
+      td.style.display="";
+    }
     else{
-      console.log("entering hereee");
       return;
     }       
   }
