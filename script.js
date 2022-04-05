@@ -49,6 +49,12 @@ document.querySelector('#cra').addEventListener('click', function(e) {
   window.location.href = 'roleDetail.html';
 }, false);
 
+function downloadFile(filePath){
+  var link=document.createElement('a');
+  link.href = filePath;
+  link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+  link.click();
+}
 
 
 // When the user clicks the button, open modal with the same id

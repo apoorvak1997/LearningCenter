@@ -279,7 +279,7 @@ align-items: center;
 padding: 4.49766px 8.99531px;
 
 position: static;
-width: 56%;
+width: 53%;
 height: 32.98px;
 left: 0px;
 top: 0px;
@@ -300,6 +300,7 @@ order: 0;
 align-self: stretch;
 flex-grow: 0;
 font-family: 'Oracle Sans';
+margin: 0px 10px 0px 0px;
 }
 
 
@@ -311,7 +312,7 @@ font-family: 'Oracle Sans';
 
 #filter{
   position: static;
-width: 261.8px;
+width: 13%;
 height: 32.98px;
 left: 0px;
 top: 0px;
@@ -357,7 +358,7 @@ border-radius: 3px;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  width:69%;
+  width:77%;
 }
 
 .content-header h3{
@@ -391,7 +392,6 @@ color: #FCFBFA;
 }
 
 .courses{
-  margin-top:-8%;
   display: flex;
 flex-direction: row;
 gap:3%;
@@ -591,6 +591,7 @@ top: 3.17px;
 
 .content-header-top{
   display:flex;
+  float:right;
 }
   #bannerimg {
   background: url(./files/image.png);
