@@ -72,17 +72,20 @@
                 <!--Search field-->
                 <input type="text" id="searchRole" onkeyup="searchRole()" placeholder=" Search for a study role"
                     title="Type in a name">
-                    <button class="download" onClick="downloadFile('./pdfs/Training_Video_Index_v1.pdf','download')">
+                    <a href = "pdfs/Training_Video_Index_v1.pdf" download="download">
+                    <button class="download"  >
                         <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0V12.5M5 8L10 13L15 8M1 13V19H19V13" stroke="white" stroke-width="2"/>
                             </svg>
-
+                                
                              Download PDF
+                            
                             </button>
+                        </a>
             </div>
             <br>
             <!--role tab-->
-            <div class="role">
+            <div class="role" onClick="navigate('Adjudicator')">
                 <!--Role heading-->
                 <h5 class="sponsor all roles">Adjudicator</h5>
                 <!--flip clock-->
@@ -104,7 +107,7 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
+            <div class="role" id="csm">
                 <h5 class="sponsor">Clinical Supply Manager</h5>
                 <div class="time-total">
                     <div class="foldable">
@@ -144,7 +147,7 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
+            <div class="role" id="dm">
                 <h5 class="sponsor">Data Manager</h5>
                 <div class="time-total">
                     <div class="foldable">
@@ -164,8 +167,8 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
-                <h5 class="sponsor">Medical Monitor</h5>
+            <div class="role" id="mm">
+                <h5 class="sponsor" >Medical Monitor</h5>
                 <div class="time-total">
                     <div class="foldable">
                         <span>2</span>
@@ -176,7 +179,6 @@
                     <p>min</p>
                     <div class="foldable">
                         <span>1</span>
-
                     </div>
                     <div class="foldable">
                         <span>4</span>
@@ -184,7 +186,7 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
+            <div class="role" id="sd">
                 <h5 class="design">Study Designer</h5>
                 <div class="time-total">
                     <div class="foldable">
@@ -224,7 +226,7 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
+            <div class="role" id="pu">
                 <h5 class="site">Pharmacy User</h5>
                 <div class="time-total">
                     <div class="foldable">
@@ -244,7 +246,27 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
+            <div class="role" id="pa">
+                <h5 class="site">Production Admin</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>4</span>
+                    </div>
+                    <div class="foldable">
+                        <span>7</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>4</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>7</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="rd">
                 <h5 class="sponsor">Rules Designer</h5>
                 <div class="time-total">
                     <div class="foldable">
@@ -264,7 +286,7 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
+            <div class="role" id="sa">
                 <h5 class="sponsor">Site Administrator</h5>
                 <div class="time-total">
                     <div class="foldable">
@@ -284,7 +306,7 @@
                     <p>sec</p>
                 </div>
             </div>
-            <div class="role">
+            <div class="role" id="su">
                 <h5 class="site">Site User</h5>
                 <div class="time-total">
                     <div class="foldable">
@@ -300,6 +322,124 @@
                     </div>
                     <div class="foldable">
                         <span>7</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="st">
+                <h5 class="site">Statistician</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <div class="foldable">
+                        <span>4</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>0</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="sm">
+                <h5 class="site">Study Manager</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>3</span>
+                    </div>
+                    <div class="foldable">
+                        <span>1</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>4</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>9</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="ubu">
+                <h5 class="site">Unblinded Depot User</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>1</span>
+                    </div>
+                    <div class="foldable">
+                        <span>5</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>4</span>
+                    </div>
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="ua">
+                <h5 class="site">User Administrator</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>1</span>
+                    </div>
+                    <div class="foldable">
+                        <span>4</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <div class="foldable">
+                        <span>7</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="vo">
+                <h5 class="site">View Only for Unblinded Depot User</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>1</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>2</span>
+                    </div>
+                    <p>sec</p>
+                </div>
+            </div>
+            <div class="role" id="vsr">
+                <h5 class="site">View Study Role</h5>
+                <div class="time-total">
+                    <div class="foldable">
+                        <span>1</span>
+                    </div>
+                    <div class="foldable">
+                        <span>0</span>
+                    </div>
+                    <p>min</p>
+                    <div class="foldable">
+                        <span>3</span>
+
+                    </div>
+                    <div class="foldable">
+                        <span>2</span>
                     </div>
                     <p>sec</p>
                 </div>

@@ -112,6 +112,7 @@
     padding:15px;
   }
   .time-total{
+      z-index: 10;
       display:flex;
       flex-direction: row;
       justify-content: space-between;
@@ -279,7 +280,7 @@ align-items: center;
 padding: 4.49766px 8.99531px;
 
 position: static;
-width: 53%;
+width: 66%;
 height: 32.98px;
 left: 0px;
 top: 0px;
@@ -305,14 +306,16 @@ margin: 0px 10px 0px 0px;
 
 
 .filter-search{
+  width:70%;
   margin-left:160px;
   display:flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #filter{
   position: static;
-width: 13%;
+width: 15%;
 height: 32.98px;
 left: 0px;
 top: 0px;
@@ -398,7 +401,6 @@ gap:3%;
 align-items: flex-start;
 padding: 0px;
 width: 77%;
-height:729px;
 margin-left:112px;
 }
 .right-column{
@@ -533,12 +535,16 @@ letter-spacing: -0.04em;
 color: #000000;
 
 
+
 /* Inside auto layout */
 
 flex: none;
 order: 2;
 flex-grow: 0;
 margin: 6px 0px;
+}
+#data-manager, #clinical-research-associate, #medical-monitor, #production-admin, #pharmacy-user, #clinical-supply-manager, #study-designer, #rules-designer, #site-administrator, #site-user, #statistician, #study-manager, #unblinded-depot-user, #user-administrator, #view-only-unblinded-support-users, #view-study-role{
+  display:none;
 }
 
 .row{
@@ -570,10 +576,7 @@ top: 3.17px;
   background-position-y: bottom ;
 }
 
-.right-floater{
-  margin-left: 10%;
 
-}
 .total-training-time{
   font-family: 'Oracle Sans';
   font-style: normal;
@@ -2151,6 +2154,7 @@ top: 3.17px;
   }
   
   #navbar {
+    z-index: 20;
     overflow: hidden;
   }
   

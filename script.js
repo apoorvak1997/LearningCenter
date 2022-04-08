@@ -14,6 +14,7 @@ function searchRole() {
       }
   }
 }
+
 function filterDropDown() {
 
   var input, filter,  tr, td, i;
@@ -46,8 +47,79 @@ function filterDropDown() {
 }
 
 document.querySelector('#cra').addEventListener('click', function(e) {
-  window.location.href = 'roleDetail.html';
+  window.location.href = 'roleDetail.html?role=cra';
 }, false);
+
+document.querySelector('#dm').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=data-manager';
+}, false);
+
+document.querySelector('#mm').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=medical-monitor';
+}, false);
+
+document.querySelector('#pu').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=pharmacy-user';
+}, false);
+
+document.querySelector('#csm').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=clinical-supply-manager';
+}, false);
+
+document.querySelector('#sd').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=study-designer';
+}, false);
+document.querySelector('#pa').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=production-admin';
+}, false);
+document.querySelector('#rd').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=rules-designer';
+}, false);
+document.querySelector('#sa').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=site-administrator';
+}, false);
+document.querySelector('#sa').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=site-administrator';
+}, false);
+document.querySelector('#st').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=statistician';
+}, false);
+document.querySelector('#sm').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=study-manager';
+}, false);
+document.querySelector('#ubu').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=unblinded-depot-user';
+}, false);
+document.querySelector('#ua').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=user-administrator';
+}, false);
+document.querySelector('#vo').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=view-only-unblinded-support-users';
+}, false);
+document.querySelector('#vsr').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=view-only-unblinded-support-users';
+}, false);
+
+function download() {
+  var iframe = document.getElementById('invisible');
+  iframe.src = "Training_Video_Index_v1.pdf";
+}
+
+function navigate(role){
+  switch(role){
+    case 'clinical-research-associate' : 
+    window.location.href = 'roleDetail.html';
+    document.getElementById('clinical-research-associate').style.display="";
+    break;
+
+    default: 
+    console.log("here");
+    window.location.href = 'roleDetail.html';
+    console.log(document.getElementById('clinical-research-associate'));
+    console.log("here1");
+    break;
+  }
+}
 
 function downloadFile(filePath){
   var link=document.createElement('a');
