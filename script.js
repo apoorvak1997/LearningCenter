@@ -69,6 +69,9 @@ document.querySelector('#csm').addEventListener('click', function(e) {
 document.querySelector('#sd').addEventListener('click', function(e) {
   window.location.href = 'roleDetail.html?role=study-designer';
 }, false);
+document.querySelector('#su').addEventListener('click', function(e) {
+  window.location.href = 'roleDetail.html?role=site-user';
+}, false);
 document.querySelector('#pa').addEventListener('click', function(e) {
   window.location.href = 'roleDetail.html?role=production-admin';
 }, false);

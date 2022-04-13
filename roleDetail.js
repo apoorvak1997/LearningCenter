@@ -47,6 +47,8 @@ switch(greetingValue){
     case 'view-only-unblinded-support-users': document.getElementById('view-only-unblinded-support-users').style.display="block";
     break;
 
+    // case 'site-user': document.getElementById('site-user').style.display="block";
+    // break;
 
     default: document.getElementById('clinical-research-associate').style.display="none";
     break;
