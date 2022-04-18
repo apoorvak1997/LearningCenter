@@ -47,11 +47,22 @@ switch(greetingValue){
     case 'view-only-unblinded-support-users': document.getElementById('view-only-unblinded-support-users').style.display="block";
     break;
 
-    // case 'site-user': document.getElementById('site-user').style.display="block";
-    // break;
+    case 'site-user': document.getElementById('site-user').style.display="block";
+    break;
+
 
     default: document.getElementById('clinical-research-associate').style.display="none";
     break;
+}
+
+function hover(){
+   var svgelem= document.getElementsByClassName('back-svg');
+   svgelem[0].style.fill= "#02629f";
+   console.log(svgelem[0].style.fill);
+   var button = document.getElementsByClassName('back');
+   button[0].addEventListener('mouseleave' , e=>{
+       svgelem[0].style.fill="black";
+   })
 }
 
 function searchTrainingCourses() {
