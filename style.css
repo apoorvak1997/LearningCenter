@@ -206,7 +206,10 @@ position: relative;
     padding: 10px 5px;
     border-right: 1px solid rgba(0,0,0,.3);
     box-shadow: 1px 0 0 rgba(255,255,255,.05), -1px 0 0 rgba(255,255,255,.05) inset    ; 
-    font: normal 28px/20px 'Helvetica Neue', sans-serif;
+    font-size:27.2732px;
+    font-family:'Oracle Sans',sans-serif;
+    font-weight:700;
+    margin-top:10%;
 }
 
 /* fastening */
@@ -246,13 +249,12 @@ position: relative;
 
 .role-detail-foldable span{
   
-  margin:auto;
-  z-index: -2;
-    font-family: 'Oracle Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 57.2274px;
-line-height: 80px;
+  display:inline-block;
+    padding: 10px 5px;
+    font-family:'Oracle Sans', sans-serif;
+    font-size:57.2274px;
+    font-weight:700;
+    margin-top:10%;
 }
 
 .role-detail-foldable +p{
